@@ -8,9 +8,7 @@ public class StudentList {
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
 			try {
-			BufferedReader s = new BufferedReader(
-					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
+			BufferedReader s = new BufferedReader(new InputStreamRead(new FileInputStream("students.txt"))); 
 			String r = s.readLine();
 			String i[] = r.split(",");			
 			for(String j : i) { System.out.println(j); }
@@ -21,9 +19,7 @@ public class StudentList {
 		{
 			System.out.println("Loading data ...");			
 			try {
-			BufferedReader s = new BufferedReader(
-					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
+			BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt"))); 
 			String r = s.readLine();
 			System.out.println(r);
 			String i[] = r.split(",");	
