@@ -19,9 +19,7 @@ public class StudentList {
 		{
 			System.out.println("Loading data ...");			
 			try {
-			BufferedReader s = new BufferedReader(
-					new InputStreamReader(
-							new FileInputStream("students.txt"))); 
+			BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt"))); 
 			String r = s.readLine();
 			System.out.println(r);
 			String i[] = r.split(",");	
